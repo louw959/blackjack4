@@ -11,7 +11,7 @@ let cardsEl = document.getElementById("cards-el");
 let newCardEl = document.getElementById("newCard-el");
 
 function newGame() {
-   return renderGame();
+    startGame();
 }
 
 function getRandomNumber() {
