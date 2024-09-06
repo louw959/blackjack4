@@ -10,10 +10,6 @@ let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 let newCardEl = document.getElementById("newCard-el");
 
-function newGame() {
-    startGame();
-}
-
 function getRandomNumber() {
    return Math.ceil(Math.random() * 13) + 1
    }
@@ -42,12 +38,13 @@ function renderGame() {
 }
 
 function newCard() {
-    if (sum <= 21) {}
+    if (sum <= 21) {
     let card = getRandomNumber();
     sum += card;
     cards.push(card)
     for(let i = 0; i < cards.length; i++) {
         cardsEl.textContent = cards[i]
+    }
     }
     renderGame()
     if (sum > 21) {
@@ -55,3 +52,8 @@ function newCard() {
         sumEl += 0;
     }
 }
+
+function newGame() {
+    location.reload()
+    }
+
