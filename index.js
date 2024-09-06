@@ -10,6 +10,10 @@ let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 let newCardEl = document.getElementById("newCard-el");
 
+function newGame() {
+    renderGame();
+}
+
 function getRandomNumber() {
    return Math.ceil(Math.random() * 13) + 1
    }
